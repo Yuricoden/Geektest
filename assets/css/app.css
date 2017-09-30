@@ -1,0 +1,135 @@
+
+body {
+ background: url(../img/background.png);
+}
+
+ul {
+  margin: 0;
+  padding:0;
+}
+
+.container{
+   /*Основной раздел будет занимать все свободное место на страниц 
+   Ширина flex-basis: auto все распредляется автоматически
+   Просто flex-grow забирает весь контент всю колонку
+     */
+   max-width: 1170px;
+  min-width: 1024px;
+    background-size: cover;
+    margin:0 auto;
+
+}
+
+header {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  background: black;
+  justify-content: space-around;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav li {
+  display: inline-block;
+  list-style-type: none;
+  margin: 10px;
+  color: white;
+}
+
+
+.logo_header img {
+  max-width: 100%;
+  min-width: 100%;
+  height: auto;
+}
+
+.logo_header {
+  width: 200px
+}
+
+
+ul li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+li.name_course {
+    padding: 12px;
+}
+
+.name_course a {
+  text-decoration: none;
+}
+
+.news_content {
+  display: flex;
+  margin: 10px;
+}
+
+.news_content__sidebar {
+background: white;
+    flex-basis: 40%;
+    display: flex;
+    flex: 1 1;
+    margin-right: 3%;
+    align-items: center;
+    justify-content: center;
+}
+
+.content_news {
+  flex: 1 1 50%;
+    background: linear-gradient(to bottom, #fffef1, #7d7b6de6);
+}
+
+.content h2 {
+display: flex;
+justify-content: center;
+}
+
+.content p {
+  width: 60%;
+}
+
+.block h4 {
+  text-align: center;
+}
+
+.block {
+      display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content_footer {
+  display: flex;
+  justify-content: center;
+}
+
+.content_footer h3 {
+  color:#fff;
+}
+
+.navigation {
+  background: white;
+}
+
+nav li a {
+  text-decoration: none;
+      padding: 10px;
+    margin: 10px;
+}
+
+nav {
+  justify-content: center;
+}
+
+.menu li a {
+  color: #fff;
+}
